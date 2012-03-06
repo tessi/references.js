@@ -8,26 +8,30 @@ Usage
 ------
 
 Add references.js at the end of your page:
-```html
+
+```
 <script src="references.js" type="text/javascript"></script>
 ```
 
 Mark your references/sources within a DOM element, that has the 'reference' class assigned:
-```html
+
+```
 <span class="reference" data-name="tessenow2012"><a href="https://github.com/tessi/references.js">references.js</a></span>
 ```
 
 Now you can add references to the reference wherever you wish.
 To reference your source in the HTML document wrap your text within a DOM element, that has the 'references' class assigned:
-```html
+
+```
 <span class="references" data-name="tessenow2012">This text references <em>references.js</em></span>
 ```
 
 The data-name attribute links your reference and source.
-The result should be:
-```html
+The result should be something like:
+
+```
 Some Text in your HTML page:
-This text references _references.js_ [1]
+This text references references.js [1]
 
 Sources:
 [1] references.js

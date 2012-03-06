@@ -33,8 +33,8 @@
 
       reference_tag = document.createElement("span");
       reference_tag.setAttribute("class", "reference-count-source");
-      reference_tag.innerHTML = "[" + reference_map[el.dataset.name] + "]";
-      insertBefore(reference_tag, el);
+      reference_tag.innerHTML = "[" + reference_map[el.dataset.name] + "] ";
+      el.parentNode.insertBefore(reference_tag, el);
     };
   });
 
